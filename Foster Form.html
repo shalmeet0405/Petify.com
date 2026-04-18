@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petify.com - Pet Foster Application</title>
+    <link rel="stylesheet" href="Form.css">
+    <link href="https://googleapis.com" rel="stylesheet">
+</head>
+<body>
+    <div class="card">
+        <header>
+            <div class="logo-text">Petify<span>.com</span></div>
+            <h1 class="tagline">Foster Care Application Form</h1>
+            <p style="text-align: center; color: var(--text-muted);">Open your heart and home to a pet in transition.</p>
+        </header>
+        
+        <form id="fosterForm">
+            <div class="main-content">
+                <!-- Sidebar: Contact Info -->
+                <div class="sidebar">
+                    <div class="entry">
+                        <label>Full Name</label>
+                        <input type="text" id="fullName" placeholder="John Doe" required>
+                    </div>
+                    <div class="entry">
+                        <label>Email Address</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="entry">
+                        <label>Phone Number</label>
+                        <input type="tel" id="phone" required>
+                    </div>
+                    <div class="entry">
+                        <label>Home Type</label>
+                        <select required>
+                            <option value="house">House with Yard</option>
+                            <option value="apartment">Apartment/Condo</option>
+                            <option value="farm">Farm/Rural</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Main Section: Foster Screening -->
+                <div class="foster-details">
+                    <div class="entry">
+                        <label>Experience Level</label>
+                        <select required>
+                            <option value="first-time">First-time Foster</option>
+                            <option value="experienced">Experienced Foster</option>
+                            <option value="medical">Comfortable with Medical Needs</option>
+                        </select>
+                    </div>
+
+                    <div class="entry">
+                        <label>Foster Duration Commitment</label>
+                        <select required>
+                            <option value="short">Short-term (1-2 weeks)</option>
+                            <option value="long">Until Adopted (Variable)</option>
+                            <option value="emergency">Emergency/Weekend Only</option>
+                        </select>
+                    </div>
+
+                    <div class="entry">
+                        <label>How many hours will the pet be alone daily?</label>
+                        <input type="text" placeholder="e.g. 4 hours" required>
+                    </div>
+
+                    <div class="entry">
+                        <label>Are you prepared to transport the pet to vet appointments?</label>
+                        <select required>
+                            <option value="yes">Yes, I have transport</option>
+                            <option value="no">No</option>
+                        </select>
+                    </div>
+
+                    <div class="entry">
+                        <label>Current Pets in Household</label>
+                        <textarea rows="2" placeholder="List ages, breeds, and if they are vaccinated..."></textarea>
+                    </div>
+
+                    <div class="entry">
+                        <label>Foster Philosophy</label>
+                        <textarea rows="3" placeholder="How will you handle a pet that is scared or has an accident in the house?"></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <button type="submit" class="submit-btn">Submit Foster Application 🏠</button>
+        </form>
+    </div>
+  <script src="foster form.js"></script>
+</body>
+</html>

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PETIFY.COM | Premium Adoption</title>
+    <link rel="stylesheet" href="Index.css">
+</head>
+<body>
+    <!-- Subtle animal pattern overlay -->
+    <div class="bg-pattern"></div> 
+
+    <nav class="navbar">
+        <div class="logo">Petify<span>.com</span></div>
+        <div class="nav-links">
+            <a href="#Adoption">Adopt</a>
+            <a href="#Foster">Foster</a>
+            <button class="btn-login" onclick="toggleModal('login')">Log In</button>
+            <button class="btn-signup" onclick="toggleModal('signup')">Sign Up</button>
+        </div>
+    </nav>
+
+    <header class="hero-section">
+        <div class="hero-content">
+            <span class="badge">🐾 Over 5,000+ Pets Adopted</span>
+            <h1>Love is a <br><span class="highlight">Four-Legged</span> Word</h1>
+            <p>Ready to meet your soulmate? We help you find the perfect furry companion through a seamless, loving process.</p>
+            <div class="hero-options">
+                <button class="opt-btn btn-primary" onclick="toggleModal('adopt')">Start Adoption</button>
+                <button class="opt-btn btn-secondary" onclick="toggleModal('foster')">Become a Foster</button>
+            </div>
+        </div>
+        <div class="hero-image-container">
+            <div class="image-blob">
+                <!-- Using a high-quality pet photo -->
+                <img src="family.jpg" alt="Happy Human and Dog">
+            </div>
+            <div class="floating-card">🐶 <span>12 New Friends Today!</span></div>
+        </div>
+    </header>
+
+<section class="middle-section" id="adopt">
+    <h2 class="section-title">Meet Your Match</h2>
+
+    <div class="pet-grid">
+
+        <!-- Pet Card 1 -->
+        <div class="pet-card">
+            <div class="card-img-wrapper">
+                <img src="Santiago-dog.jpeg" alt="Santiago">
+                <span class="tag adopt">Adopt</span>
+            </div>
+            <div class="card-info">
+                <h3>Santiago</h3>
+                <p>Gentle, trained, and loves afternoon walks.</p>
+                <a href="Description of santiago-dog.html">Inquire Now!</a>
+            </div>
+        </div>
+
+        <!-- Pet Card 2 -->
+        <div class="pet-card">
+            <div class="card-img-wrapper">
+                <img src="Eva-parrot.jpg" alt="Eva">
+                <span class="tag foster">Foster</span>
+            </div>
+            <div class="card-info">
+                <h3>Eva</h3>
+                <p>Gentle, trained, and loves afternoon walks.</p>
+                <a href="Description of eva-parrot.html">Inquire Now!</a>
+            </div>
+        </div>
+
+        <!-- Pet Card 3 -->
+        <div class="pet-card">
+            <div class="card-img-wrapper">
+                <img src="Sofie-cat.jpg" alt="Sofie">
+                <span class="tag foster">Foster</span>
+            </div>
+            <div class="card-info">
+                <h3>Sofie</h3>
+                <p>A quiet observer who loves chin scratches.</p>
+                <a href="Description of Sofie-cat.html">Inquire Now!</a>
+            </div>
+        </div>
+
+        <!-- Pet Card 4 -->
+        <div class="pet-card">
+            <div class="card-img-wrapper">
+                <img src="max-dog.jfif" alt="Max">
+                <span class="tag adopt">Adopt</span>
+            </div>
+            <div class="card-info">
+                <h3>Max</h3>
+                <p>A quiet observer who loves chin scratches.</p>
+                <a href="Description of max-dog.html">Inquire Now!</a>
+            </div>
+        </div>
+
+        <!-- Pet Card 5 -->
+        <div class="pet-card">
+            <div class="card-img-wrapper">
+                <img src="Holy and Mateo-bird.jpg" alt="Holy and Mateo">
+                <span class="tag foster">Foster</span>
+            </div>
+            <div class="card-info">
+                <h3>Holy and Mateo</h3>
+                <p>Gentle, trained, and loves afternoon walks.</p>
+                <a href="Description of holy and mateo-bird.html">Inquire Now!</a>
+            </div>
+        </div>
+
+        <!-- Pet Card 6 -->
+        <div class="pet-card">
+            <div class="card-img-wrapper">
+                <img src="tony-cat.jpg" alt="Tony">
+                <span class="tag foster">Foster</span>
+            </div>
+            <div class="card-info">
+                <h3>Tony</h3>
+                <p>A quiet observer who loves chin scratches.</p>
+                <a href="Description of tony-cat.html">Inquire Now!</a>
+            </div>
+        </div>
+
+        <!-- Pet Card 7 -->
+        <div class="pet-card">
+            <div class="card-img-wrapper">
+                <img src="Jack-cat.jpg" alt="Jack">
+                <span class="tag adopt">Adopt</span>
+            </div>
+            <div class="card-info">
+                <h3>Jack</h3>
+                <p>A quiet observer who loves chin scratches.</p>
+                <a href="Description of Jack-cat.html">Inquire Now!</a>
+            </div>
+        </div>
+
+        <!-- Pet Card 8 -->
+        <div class="pet-card">
+            <div class="card-img-wrapper">
+                <img src="humper-bunny.jpg" alt="Humper">
+                <span class="tag adopt">Adopt</span>
+            </div>
+            <div class="card-info">
+                <h3>Humper</h3>
+                <p>Gentle, trained, and loves afternoon walks.</p>
+                <a href="Description of humper-bunny.html">Inquire Now!</a>
+            </div>
+        </div>
+
+        <!-- Pet Card 9 -->
+        <div class="pet-card">
+            <div class="card-img-wrapper">
+                <img src="eve-dog.jpg" alt="Jack">
+                <span class="tag adopt">Adopt</span>
+            </div>
+            <div class="card-info">
+                <h3>Eve</h3>
+                <p>A quiet observer who loves chin scratches.</p>
+                <a href="Description of Eve-dog.html">Inquire Now!</a>
+            </div>
+        </div>
+
+        <!-- Pet Card 10 -->
+        <div class="pet-card">
+            <div class="card-img-wrapper">
+                <img src="jenny-bird.jpg" alt="Jenny">
+                <span class="tag foster">Foster</span>
+            </div>
+            <div class="card-info">
+                <h3>Jenny</h3>
+                <p>Gentle, trained, and loves afternoon walks.</p>
+                <a href="Description of jenny-bird.html">Inquire Now!</a>
+            </div>
+        </div>
+
+        <!-- Pet Card 11 -->
+        <div class="pet-card">
+            <div class="card-img-wrapper">
+                <img src="Silvie-dog.jpg" alt="Jack">
+                <span class="tag adopt">Adopt</span>
+            </div>
+            <div class="card-info">
+                <h3>Silvie</h3>
+                <p>A quiet observer who loves chin scratches.</p>
+                <a href="Description of Silvie-dog.html">Inquire Now!</a>
+            </div>
+        </div>
+
+        <!-- Pet Card 12 -->
+        <div class="pet-card">
+            <div class="card-img-wrapper">
+                <img src="Jina-Bunny.jfif" alt="Jina">
+                <span class="tag adopt">Adopt</span>
+            </div>
+            <div class="card-info">
+                <h3>Jina</h3>
+                <p>Gentle, trained, and loves afternoon walks.</p>
+                <a href="Description of Jina-Bunny.html">Inquire Now!</a>
+            </div>
+        </div>
+
+        <!-- Pet Card 13 -->
+        <div class="pet-card">
+            <div class="card-img-wrapper">
+                <img src="Josh-cat.jpg" alt="Jack">
+                <span class="tag foster">Foster</span>
+            </div>
+            <div class="card-info">
+                <h3>Josh</h3>
+                <p>A quiet observer who loves chin scratches.</p>
+                <a href="Description of Josh-cat.html">Inquire Now!</a>
+            </div>
+        </div>
+
+        <!-- Pet Card 14 -->
+        <div class="pet-card">
+            <div class="card-img-wrapper">
+                <img src="Joe-bunny.jpg" alt="Joe">
+                <span class="tag adopt">Adopt</span>
+            </div>
+            <div class="card-info">
+                <h3>Joe</h3>
+                <p>Gentle, trained, and loves afternoon walks.</p>
+                <a href="Description of Joe-bunny.html">Inquire Now!</a>
+            </div>
+        </div>
+
+        <!-- Pet Card 15 -->
+        <div class="pet-card">
+            <div class="card-img-wrapper">
+                <img src="lucy-bird.jpg" alt="Lucy">
+                <span class="tag foster">Foster</span>
+            </div>
+            <div class="card-info">
+                <h3>Lucy</h3>
+                <p>Gentle, trained, and loves afternoon walks.</p>
+                <a href="Description of lucy-bird.html">Inquire Now!</a>
+            </div>
+        </div>
+
+        <!-- Pet Card 16 -->
+        <div class="pet-card">
+            <div class="card-img-wrapper">
+                <img src="tina-bunny.jpg" alt="Tina">
+                <span class="tag foster">Foster</span>
+            </div>
+            <div class="card-info">
+                <h3>Tina</h3>
+                <p>Gentle, trained, and loves afternoon walks.</p>
+                <a href="Description of Tina-Bunny.html">Inquire Now!</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-box">
+                <h3>Our Mission</h3>
+                <p>We leverage technology and compassion to ensure every pet finds a "furever" home. PETYFY is more than a site; it's a movement.</p>
+            </div>
+            <div class="footer-box">
+                <h3>Policies</h3>
+                <p>Adoption fees cover vaccinations and microchipping. We require a 24-hour cooling-off period for all new pet parents.</p>
+            </div>
+        </div>
+        <p class="bottom-bar">Made with ❤️ for Animals | © 2026 Petify.com</p>
+    </footer>
+
+    <script src="Index.js"></script>
+</body>
+</html>

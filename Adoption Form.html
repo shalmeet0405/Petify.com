@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petify.com - Pet Adoption Application</title>
+    <!-- Linking the same CSS file used for the foster form -->
+    <link rel="stylesheet" href="Form.css">
+    <link href="https://googleapis.com" rel="stylesheet">
+</head>
+<body>
+    <div class="card">
+        <header>
+            <div class="logo-text">Petify<span>.com</span></div>
+            <h1 class="tagline">Adoption Application Form</h1>
+            <p style="text-align: center; color: var(--text-muted);">Find your new best friend and forever companion.</p>
+        </header>
+        
+        <form id="adoptionForm">
+            <div class="main-content">
+                <!-- Sidebar: Contact Info -->
+                <div class="sidebar">
+                    <div class="entry">
+                        <label>Full Name</label>
+                        <input type="text" id="fullName" placeholder="Jane Doe" required>
+                    </div>
+                    <div class="entry">
+                        <label>Email Address</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="entry">
+                        <label>Phone Number</label>
+                        <input type="tel" id="phone" required>
+                    </div>
+                    <div class="entry">
+                        <label>Housing Status</label>
+                        <select required>
+                            <option value="own">Own</option>
+                            <option value="rent">Rent (Landlord approval required)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Main Section: Adoption Screening -->
+                <div class="foster-details">
+                    <div class="entry">
+                        <label>Which pet are you interested in?</label>
+                        <input type="text" placeholder="Pet's Name or Breed" required>
+                    </div>
+
+                    <div class="entry">
+                        <label>Household Activity Level</label>
+                        <select required>
+                            <option value="low">Quiet / Relaxed</option>
+                            <option value="medium">Moderate / Active</option>
+                            <option value="high">Very High / Athletic</option>
+                        </select>
+                    </div>
+
+                    <div class="entry">
+                        <label>Where will the pet spend most of its time?</label>
+                        <input type="text" placeholder="e.g. Indoors, Fenced Yard" required>
+                    </div>
+
+                    <div class="entry">
+                        <label>Do you have a veterinarian?</label>
+                        <select required>
+                            <option value="yes">Yes, I have a local vet</option>
+                            <option value="no">No, I need a recommendation</option>
+                        </select>
+                    </div>
+
+                    <div class="entry">
+                        <label>Previous Pet History</label>
+                        <textarea rows="2" placeholder="Tell us about pets you've owned in the past..."></textarea>
+                    </div>
+
+                    <div class="entry">
+                        <label>Why do you want to adopt?</label>
+                        <textarea rows="3" placeholder="What draws you to this specific pet or breed?"></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <button type="submit" class="submit-btn">Submit Adoption Application 🐾</button>
+        </form>
+    </div>
+
+    <!-- Script connection -->
+    <script src="Adoption Form.js"></script>
+</body>
+</html>

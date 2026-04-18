@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petify - Join the Pack</title>
+    <link rel="stylesheet" href="sign-up_style.css">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Animated background shapes -->
+    <div class="blob"></div>
+    <div class="blob2"></div>
+
+    <div class="signup-wrapper">
+        <div class="glass-card">
+            <div class="logo">🐾</div>
+            <h2>Join <span>Petify</span></h2>
+            <p>Start your pawsome journey today!</p>
+            
+            <form id="signupForm">
+                <div class="input-group">
+                    <input type="text" id="fullname" placeholder=" " required>
+                    <label>Your Full Name</label>
+                </div>
+
+                <div class="input-group">
+                    <input type="email" id="email" placeholder=" " required>
+                    <label>Email Address</label>
+                </div>
+
+                <div class="input-group">
+                    <select id="petType" required>
+                        <option value="" disabled selected hidden></option>
+                        <option value="Dog">Dog 🐶</option>
+                        <option value="Cat">Cat 🐱</option>
+                        <option value="Bird">Bird 🦜</option>
+                        <option value="Other">Other 🐹</option>
+                    </select>
+                    <label>What's your pet's type?</label>
+                </div>
+                
+                <div class="row">
+                    <div class="input-group">
+                        <input type="password" id="password" placeholder=" " required>
+                        <label>Password</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" id="confirmPassword" placeholder=" " required>
+                        <label>Confirm</label>
+                    </div>
+                </div>
+
+                <button type="submit" class="glow-btn">Create Account</button>
+            </form>
+
+            <p class="footer">Already a member? <a href="login page.html">Login here</a></p>
+        </div>
+    </div>
+    <script src="signup.js"></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+:root {
+    --primary: #ff8c00;
+    --secondary: #6c5ce7;
+    --glass: rgba(255, 255, 255, 0.8);
+}
+
+body {
+    margin: 0;
+    font-family: 'Fredoka', sans-serif;
+    background: linear-gradient(135deg, #ffeaa7 0%, #fab1a0 100%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Floating Blobs for creativity */
+.blob, .blob2 {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: var(--primary);
+    filter: blur(80px);
+    border-radius: 50%;
+    z-index: -1;
+    animation: move 10s infinite alternate;
+}
+.blob2 { background: var(--secondary); right: 10%; bottom: 10%; animation-delay: 2s; }
+
+@keyframes move { from { transform: translate(0,0); } to { transform: translate(50px, 100px); } }
+
+/* Frosted Glass Card */
+.glass-card {
+    background: var(--glass);
+    backdrop-filter: blur(15px);
+    padding: 40px;
+    border-radius: 30px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    border: 1px solid rgba(255,255,255,0.4);
+    width: 450px;
+    text-align: center;
+}
+
+.logo { font-size: 50px; margin-bottom: 10px; }
+h2 span { color: var(--primary); }
+
+/* Floating Labels Styling */
+.input-group { position: relative; margin-bottom: 25px; text-align: left; }
+.input-group input, .input-group select {
+    width: 100%; padding: 12px; border: none; background: rgba(0,0,0,0.05);
+    border-radius: 12px; outline: none; transition: 0.3s;
+}
+.input-group label {
+    position: absolute; left: 12px; top: 12px; color: #777;
+    transition: 0.3s; pointer-events: none;
+}
+.input-group input:focus + label, .input-group input:not(:placeholder-shown) + label {
+    top: -18px; left: 5px; font-size: 12px; color: var(--secondary); font-weight: 600;
+}
+
+/* Stylish Button */
+.glow-btn {
+    width: 100%; padding: 15px; border: none; border-radius: 12px;
+    background: linear-gradient(90deg, var(--primary), #ffb347);
+    color: white; font-weight: 600; cursor: pointer;
+    box-shadow: 0 5px 15px rgba(255, 140, 0, 0.4);
+    transition: 0.3s;
+}
+.glow-btn:hover { transform: translateY(-3px); box-shadow: 0 8px 20px rgba(255, 140, 0, 0.6); }
+
+.row { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }

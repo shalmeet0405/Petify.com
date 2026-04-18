@@ -1,0 +1,112 @@
+:root {
+    --bg-light: #ffffff;
+    --card-bg: #ffffff;
+    --combined-gradient: linear-gradient(45deg, #FF99CC, #89f7fe);
+    --text-main: #2d3436;
+    --text-muted: #636e72;
+    --sidebar-bg: rgba(248, 249, 250, 0.9);
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-main);
+    padding: 20px;
+}
+
+.card {
+    background: var(--card-bg);
+    padding: 40px;
+    border-radius: 40px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+    max-width: 900px;
+    width: 100%;
+}
+
+.logo-text {
+    font-weight: 800;
+    font-size: 1.5rem;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.logo-text span { color: #FF99CC; }
+
+.tagline {
+    display: block;
+    margin: 10px 0 30px 0;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    background: var(--combined-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.sidebar {
+    background: var(--sidebar-bg);
+    padding: 25px;
+    border-radius: 25px;
+}
+
+.entry { margin-bottom: 18px; }
+
+.entry label {
+    display: block;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--text-muted);
+    margin-bottom: 6px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #edf2f7;
+    border-radius: 12px;
+    font-family: 'Poppins', sans-serif;
+    transition: 0.3s;
+    box-sizing: border-box;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #89f7fe;
+    outline: none;
+    box-shadow: 0 0 10px rgba(137, 247, 254, 0.2);
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 20px;
+    margin-top: 30px;
+    border: none;
+    border-radius: 20px;
+    background: var(--combined-gradient);
+    color: white;
+    font-weight: 700;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(255, 153, 204, 0.4);
+}
+
+@media (max-width: 768px) {
+    .main-content { grid-template-columns: 1fr; }
+}
